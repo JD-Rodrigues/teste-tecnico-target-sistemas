@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fibonacci - Checagem</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body >
+    <section class="container">
+        <h2 class="section-title">1. Sequência de Fibonacci - verificação de número</h2>
+        <img src="./assets/images/fibonacci.png" class="section-pic fibonacci-pic">
+        <p>Insira um número para checar se ele faz parte da Sequência de Fibonacci:</p>
+        <form class="form">
+            <input 
+                type="number" 
+                id="input-number" 
+                class="input-number" 
+                placeholder="0"
+                required
+            >
+            <button type="submit" id="check-fibonacci-button" class="check-button">Verificar</button>
+        </form>
+        <p 
+            class="result"
+            id="fibonacci-result"
+        >       
+        </p>
+    </section>
+    <section class="container">
+        <h2 class="section-title">2. Número de ocorrências da letra "a" na string </h2>
+        <img src="./assets/images/letter-a.png" class="section-pic">
+        <p>Insira uma sentença para verificar quantas vezes a letra "a" aparece nela:</p>
+        <form class="form">
+            <input 
+                type="text" 
+                id="input-string" 
+                class="input-string" 
+                placeholder="Abcde"
+                required
+            >
+            <button type="submit" id="check-a-button" class="check-button">Verificar</button>
+        </form>
+        <p 
+            class="result"
+            id="count-a-result"
+        >       
+        </p>
+    </section>
+    <section class="container">
+        <h2 class="section-title">3. Observe o trecho de código abaixo: </h2>
+    
+        <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=15.5px&lh=133%25&si=false&es=2x&wm=false&code=int%2520INDICE%2520%253D%252012%253B%250ASOMA%2520%253D%25200%253B%250AK%2520%253D%25201%253B%250A%250Aenquanto%2520K%2520%253C%2520INDICE%2520fa%25C3%25A7a%2520%257B%250A%2520%2520%2520%2520K%2520%253D%2520K%2520%252B%25201%253B%250A%2520%2520%2520%2520SOMA%2520%253D%2520SOMA%2520%252B%2520K%253B%250A%257D%250A%250Aimprimir%28SOMA%29%253B"
+            style="width: 281px; height: 280px; border:0; transform: scale(1); overflow:hidden;"
+            sandbox="allow-scripts allow-same-origin">
+        </iframe>
+        <p class="utterance">• Ao final do processamento, qual será o valor da variável SOMA?</p>
+        <p>Resposta: <code class="answer">66</code></p>        
+    </section>
+    <section class="container">
+        <h2 class="section-title">4. Descubra a lógica e complete o próximo elemento:</h2>    
+        <ol class="utterance list-lower-alpha">
+            <li>1, 3, 5, 7, <code class="answer">9</code></li>
+            <li> 2, 4, 8, 16, 32, 64,<code class="answer">128</code></li>
+            <li>0, 1, 4, 9, 16, 25, 36, <code class="answer">49</code></li>
+            <li>4, 16, 36, 64,<code class="answer">100</code></li>
+            <li>1, 1, 2, 3, 5, 8,<code class="answer">13</code> </li>
+            <li>2, 10, 12, 16, 17, 18, 19, <code class="answer">200</code></li>
+        </ol>      
+    </section>
+    <section class="container">
+        <h2 class="section-title">5. O problema das 3 lâmpadas:</h2>    
+        <p class="utterance">Você está em uma sala com três interruptores, cada um conectado a uma lâmpada em salas diferentes. Você não pode ver as lâmpadas da sala em que está, mas pode ligar e desligar os interruptores quantas vezes quiser. Seu objetivo é descobrir qual interruptor controla qual lâmpada. Como você faria para descobrir, usando apenas duas idas até uma das salas das lâmpadas, qual interruptor controla cada lâmpada? </p>
+        <p>
+            Resposta: <br><br>
+            <code class="answer">
+                PROCEDIMENTOS:<br><br>
+                1 - Ligaria o primeiro interruptor e aguardaria por um momento. <br>
+                2 - Desligaria o primeiro interruptor, ligaria o segundo e iria até uma das salas. <br>
+                3 - A sala em que eu encontrasse a luz apagada, verificaria se a lâmpada está quente.<br><br>
+                CONCLUSÕES:<br><br>
+
+                • Se a lâmpada da primeira sala estivesse ligada e a da segunda sala estivesse apagada e quente, então eu saberia que: o primeiro interruptor acende a lâmpada da segunda sala, o segundo interruptor acende a lâmpada da primeira sala e, o terceiro interruptor, acende a lâmpada da terceira sala. <br><br>
+
+                • Se a lâmpada da primeira sala estivesse ligada e a da segunda sala estivesse apagada e fria, então eu saberia que: o primeiro interruptor acende a lâmpada da terceira sala, o segundo interruptor acende a lâmpada da primeira sala e, o terceiro interruptor, acende a lâmpada da segunda sala. <br><br>
+
+                • Se a lâmpada da primeira sala estivesse desligada e quente e a da segunda sala estivesse acesa, então eu saberia que: o primeiro interruptor acende a lâmpada da primeira sala, o segundo interruptor acende a lâmpada da segunda sala e, o terceiro interruptor, acende a lâmpada da terceira sala. <br><br>
+
+                • Se a lâmpada da primeira sala estivesse desligada e quente e a da segunda sala estivesse apagada e fria, então eu saberia que: o primeiro interruptor acende a lâmpada da primeira sala, o segundo interruptor acende a lâmpada da terceira sala e, o terceiro interruptor, acende a lâmpada da segunda sala. <br><br>
+
+                • Se a lâmpada da primeira sala estivesse desligada e fria, enquanto a da segunda sala estivesse apagada e quente, então eu saberia que: o primeiro interruptor acende a lâmpada da segunda sala, o segundo interruptor acende a lâmpada da terceira sala e, o terceiro interruptor, acende a lâmpada da primeira sala. <br><br>
+
+                • Se a lâmpada da primeira sala estivesse desligada e fria, enquanto a da segunda sala estivesse acesa, então eu saberia que: o primeiro interruptor acende a lâmpada da terceira sala, o segundo interruptor acende a lâmpada da segunda sala e, o terceiro interruptor, acende a lâmpada da primeira sala. <br>
+            </code>
+        </p>    
+    </section>
+    
+    <script src="./utils/fibonacci.js"></script>
+    <script src="./utils/how-many-a.js"></script>
+</body>
+</html>
