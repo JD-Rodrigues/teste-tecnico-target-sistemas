@@ -7,7 +7,7 @@ document.querySelector('#check-a-button').addEventListener('click', (e)=> {
 })
 
 function countA(str) {
-    const strArr = str.toLowerCase().split("");
+    const strArr = str.toLowerCase().replace(/[áàâã]/g, "a").split("");
     console.log(strArr)
 
     let howManyA = 0
